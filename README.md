@@ -12,6 +12,17 @@ To install depedancy packages of pipenv:
 ```
 pipenv install
 ```
+Once everything is installed using the following terminal command in the python environment
+
+To start worker process with celery only:(To run delayed jobs only)
+```
+celery -A dj_celery worker -l info
+```
+
+To start worker process with celery and beat:(To run delayed and periodic job at the same time)
+```
+celery -A dj_celery worker -l info -B
+```
 
 ### Credits:
 https://medium.com/@markgituma/using-django-2-with-celery-and-redis-21343284827c
