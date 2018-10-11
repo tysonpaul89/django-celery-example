@@ -1,0 +1,15 @@
+<h1>Celery Functionality Demo</h1>
+
+{% if email_status %}
+    <h4>Email Sent Successfully</h4>
+{% else %}
+    <h3>Feedback Form(Uses celery to send email in background)</h3>
+    <form action="" method="post">
+        {% csrf_token %}
+        <input type="email" name="from" placeholder="Form Email">
+        <br/><br/>
+        <textarea name="message" cols="30" rows="10" placeholder="Feedback"></textarea>
+        <br/><br/>
+        <input type="submit" value="Send">
+    </form>
+{% endif %}
