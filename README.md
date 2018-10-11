@@ -4,10 +4,14 @@
 * For celery backend, I am using Redis.
 
 To install redis:
-sudo apt install redis-server
+```
+sudo apt install redis-server 
+```
 
 To install depedancy packages of pipenv:
+```
 pipenv install
+```
 
 Credits:
 https://medium.com/@markgituma/using-django-2-with-celery-and-redis-21343284827c
