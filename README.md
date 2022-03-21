@@ -26,4 +26,5 @@ celery -A dj_celery worker -l info -B
 
 ### Credits:
 https://medium.com/@markgituma/using-django-2-with-celery-and-redis-21343284827c
+
 https://medium.com/@yehandjoe/celery-4-periodic-task-in-django-9f6b5a8c21c7
